@@ -1,0 +1,20 @@
+The Advance concepts of JavaScripts are :
+1. Asynchronous ----> SetTimeOut() // callback Functions ✅
+2. call(), Apply(), Bind(), Await()
+3. Promises
+4. this ✅
+5. Modules
+6. Closures
+
+Things I Have to do:
+JavaScript🚀 BOM
+Practise DOM + Jquery
+Web API
+----All to be done from GFG and W3Schools-----
+seems cool have to do alot.....InshaAllah will do IT!!✨
+.
+.
+.
+.
+.
+Then REACT

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning Promises</h2>
+<script>
+function loadJson(url) {
+  return fetch(url)
+    .then(response => response.json());
+}
+
+function loadGithubUser(name) {
+  return loadJson(`https://api.github.com/users/${name}`);
+}
+
+function showAvatar(githubUser) {
+  return new Promise(function(resolve, reject) {
+    let img = document.createElement('img');
+    img.src = githubUser.avatar_url;
+    img.className = "promise-avatar-example";
+    document.body.append(img);
+
+    setTimeout(() => {
+      img.remove();
+      resolve(githubUser);
+    }, 3000);
+  });
+}
+Promise.all([
+  loadJson('/Advance JavaScript/user1.json'),
+  loadJson('/advance JavaScript/user2.json')
+])
+.then(users => {
+  // Load GitHub user data for both users
+  return Promise.all(users.map(user => loadGithubUser(user.name)));
+})
+.then(users => {
+  // Show avatars for both users
+  return Promise.all(users.map(showAvatar));
+})
+.then(users => {
+  // Alert when both avatars are shown
+  users.forEach(user => {
+    alert(`Finished showing ${user.name}`);
+  });
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+// loadJson('/Advance JAvaScript/try.json')
+//   .then(user => loadGithubUser(user.name))
+//   .then(showAvatar)
+//   .then(githubUser => alert(`Finished showing ${githubUser.name}`));
+</script>
+</body>
+</html>

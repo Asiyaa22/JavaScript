@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Learning Asynchronous javaScript💖</div>
+<script>
+//     function loadScript(src, callback) {
+//   let script = document.createElement('script');
+//   script.src = src;
+  
+//   script.onload = () => callback(null, script);
+//   script.onerror = () => callback(new Error(`Script load error for ${src}`));
+
+//   document.head.append(script);
+// }
+
+// function handleError(error) {
+//   alert('Sorry, an error occurred while loading the script.');
+// }
+
+// loadScript('/Intro_JavaScript/JavaScript2💕.js', function(error, script) {
+//   if (error) {
+//     handleError(error);
+//   } else {
+//     alert(`Cool, the script ${script.src} is loaded`);
+//     // Call your async function here if needed
+//     myAsyncFunction();
+//   }
+// });
+  
+function loadScript(src, callback) {
+  let script = document.createElement('script');
+  script.src = src;
+
+  script.onload = () => callback(null, script);
+  script.onerror = () => callback(new Error(`Script load error for${src}`));
+
+  document.head.append(script);
+}
+function handleError(error){
+  // script.onerror = () => callback(new Error(`Script load error for${src}`));
+  alert(`Sorry, error occured while loading this Script`)
+}
+loadScript('/Intro_JavaScript/JavaScript💕.js', function(error, script){
+if(error){
+handleError(error);
+// alert(`Error occured`);
+}else{
+  alert(`cool, the script ${script.src} is loaded`);
+  myAsyncFunction();
+}
+});
+
+// loadScript('/Intro_JavaScript/JavaScript💕.js', script => {
+//   alert(`Cool, the script ${script.src} is loaded`);
+//   myAsyncFunction(); // _ is a function declared in the loaded script
+// });
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo" style="font-size: 50px; display: flex; justify-content: center; align-items: center; height: 90vh;">
+        helloo Darling!!
+    </div>
+    <!-- <script src="pro🚀.js"></script> -->
+    <script>
+     
+function delay(ms) {
+  return new Promise(function(resolve, reject){
+    setTimeOut(() => resolve(), 1000);
+  });
+}
+
+delay(3000).then(() => alert('runs after 3 seconds'));
+
+
+
+        // //Asyn/Await
+        // async function myFunction(){
+        //     let myPromise = new Promise(function(resolve, reject){
+        //         setInterval(function(){ resolve("I love You!!");}, 3000);
+        //     });
+        //     document.getElementById("demo").innerHTML = await myPromise;
+        // } 
+        // myFunction();
+        
+        // function myDisplayer(some){
+        //     document.getElementById("demo").innerHTML = some;
+        // }
+
+
+
+
+
+    // get a file
+    // let myFile = new Promise(function(myResolve, myReject){
+    //     let req = new XMLHttpRequest();
+    //     req.open('GET',"index2.html");
+    //     req.onload = function(){
+    //       if (req.status == 200){
+    //         myResolve(req.response);
+    //       }else{
+    //         myReject(
+    //             "File Not Found"
+    //         )
+    //       }
+    //     };
+    //     req.send();
+    // });
+    // myFile.then(
+    //     function(value){
+    //         myDisplayer(value);
+    //     },
+    //     function(error){
+    //         myDisplayer(error);
+    //     }
+    // );
+
+
+
+    // setInterval(myFunction, 1000);
+    // function myFunction(){
+    //     let d = new Date();
+    //     document.getElementById("demo").innerHTML = d.getHours()+":"+
+    //     d.getMinutes()+":"+d.getSeconds();
+    // }
+    // clearInterval(myFunction, 5000);
+
+
+
+    // setTimeout(myFunction, 3000);
+    // function myFunction(){
+    //     document.getElementById("demo").innerHTML = "I love you!"
+    // }
+
+
+    // const myNumbers = [1, 2, 4, -6, 10, -30, -7];
+    // const posNumbers = removeNeg(myNumbers, (x) => x >= 0);
+    // document.getElementById("demo").innerHTML = posNumbers;
+    // function removeNeg(numbers, callback){
+    //     const myArray = [];
+    //     for(const x of numbers){
+    //         if(callback(x)){
+    //             myArray.push(x);
+    //         }
+    //     }
+    //     return myArray;
+    // } 
+    // console.log(posNumbers);
+
+
+//    setInterval(myFunction, 1000);
+//    function myFunction(){
+//    let d = newDate();
+//    document.getElementById("demo").innerHTML = d.getHours()+":"
+//    +d.getMinutes()+":"+d.getSeconds();
+//    }
+
+    </script>
+</body>
+</html>
