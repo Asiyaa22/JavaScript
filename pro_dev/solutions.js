@@ -20,3 +20,4 @@ function countEvenOdd(n){
 
 let count = countEvenOdd(234567);
 console.log(`Even: ${count.even}, Odd: ${count.odd}`);
+
