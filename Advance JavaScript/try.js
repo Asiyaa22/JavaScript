@@ -20,7 +20,7 @@ function loadJson(url) {
       }, 3000);
     });
   }
-  loadJson('/article/promise-chaining/user.json')
+  loadJson('/article/promise-chaining/user1.json')
     .then(user => loadGithubUser(user.name))
     .then(showAvatar)
     .then(githubUser => alert(`Finished showing ${githubUser.name}`));

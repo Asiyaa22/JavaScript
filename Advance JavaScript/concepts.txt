@@ -18,3 +18,24 @@ seems cool have to do alot.....InshaAllah will do IT!!✨
 .
 .
 Then REACT
+
+I have studied this but not with interview pov I mean not deeply
+I have almost used these concepts in my code but still I feel there is a gap
+so lets fill this gap 
+
+31st of Jan ---- 
+🎯 Goal Mastery In JavaScript🚀
+
+Maths in JavaScript🚀 (Have to)
+Variables - Done with all the differences in var, let & concepts ✅
+Data types (have to)
+Functions - Function Declaration
+            Function Statement & Definition
+            Function Expression
+            First Class Functions
+            Arrow Functions
+------------Done ✅
+Higher Order Functions & callbacks (under Progress 🚧)
+
+
+condition to check prime odd and even
